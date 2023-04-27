@@ -1,0 +1,28 @@
+@use "../../sass/index.scss" as *;
+
+.navbar_container {
+  @include flex(center, space-between);
+  background: $cl-black;
+  
+  height: 98px;
+  h1 {
+    color: $cl-white;
+    font: normal normal 900 36px/55px sans-serif;
+    margin-left: 20px;
+  }
+  .navbar_right_side {
+    display: flex;
+    div {
+      color: $cl-white;
+      font: $poppin3;
+      margin-top: 20px;
+      margin-right: 20px;
+    }
+    img {
+      width: 68px;
+      background: $un-c-e;
+      border-radius: 100px;
+      height: 68px;
+    }
+  }
+}

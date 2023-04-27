@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import UserPhoto from "../../assets/add_photo.svg";
 
 import "./signIn.scss";
@@ -12,8 +14,10 @@ const SignIn = () => {
           <img src={UserPhoto} alt="" />
         </div>
         <label>fill in you name</label>
-        <input type="text" placeholder="your name"/>
-        <button>Sign In</button>
+        <input type="text" placeholder="your name" />
+        <Link to="/todo">
+          <button>Sign In</button>
+        </Link>
       </div>
     </div>
   );
