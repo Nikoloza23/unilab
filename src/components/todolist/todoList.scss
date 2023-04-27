@@ -48,6 +48,19 @@
       font-weight: $fw;
       font-family: sans-serif;
     }
+    .completed {
+      border-radius: 4px;
+      padding-top: 10px;
+      padding-left: $regular_size;
+      color: $cl-white;
+      width: 520px;
+      height: 32px;
+      margin-bottom: 10px;
+      list-style: $without;
+      font-weight: $fw;
+      font-family: sans-serif;
+      background: $un-c-e;
+    }
   }
   .todo_template {
     width: 100px;
@@ -64,16 +77,16 @@
   }
 }
 
-.completed {
-  border-radius: 4px;
-  padding-top: $regular_size;
-  padding-left: $regular_size;
-  color: $cl-white;
-  width: 510px;
-  height: 30px;
-  margin-bottom: 10px;
-  list-style: $without;
-  font-weight: $fw;
-  font-family: sans-serif;
-  background: $un-c-e;
+@media (max-width: 1000px) {
+  .todo_list_container {
+    input {
+      width: 80vw;
+    }
+    button {
+      width: 30%;
+    }
+    .added_tasks {
+      width: 350px !important;
+    }
+  }
 }

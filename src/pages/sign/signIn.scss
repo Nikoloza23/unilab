@@ -21,22 +21,18 @@
     label {
       font: $poppin3;
       margin-top: $regular_size;
-      margin-bottom: 15px;
     }
     .img_bubble {
-      width: 110px;
-      height: 80px;
-      background: #e6ebff 0% 0% no-repeat padding-box;
-      border-radius: 80px;
-      margin-bottom: $regular_size;
-      &:hover {
-        background: $cl-green;
-      }
       img {
-        width: 63px;
-        margin-top: 5px;
-        margin-left: 25px;
+        width: 50px;
+        padding: 0px 30px;
+        height: 100px;
+        border-radius: 80px;
+        margin-top: 15px;
         cursor: $curs;
+        &:hover {
+          background: $cl-green;
+        }
       }
     }
     input {
@@ -64,5 +60,12 @@
         color: $cl-white;
       }
     }
+  }
+}
+
+@media (max-width: 1000px) {
+  .registrer_container {
+    width: 100%;
+    height: 100vh;
   }
 }

@@ -31,12 +31,13 @@ const SignIn = () => {
   };
 
   function handleJoin() {
+    if (!userProfile || !enteredName) return;
     const enteredValues = {
       FirstName: enteredName,
       Profile: userProfile,
     };
-    if (!enteredName) return;
     localStorage.setItem("joinedUser", JSON.stringify(enteredValues));
+
     navigate("/todo");
   }
 
@@ -47,7 +48,7 @@ const SignIn = () => {
         <label htmlFor="fileInput">
           add a photo
           <div className="img_bubble">
-            <img src={UserPhoto} alt="" />
+            <img src={userProfile || UserPhoto} alt="" />
           </div>
         </label>
         <input
