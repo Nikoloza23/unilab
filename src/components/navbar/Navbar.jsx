@@ -1,5 +1,6 @@
 import "./navbar.scss";
 
+//Navbar
 const Navbar = () => {
   const JoinedUser = JSON.parse(localStorage.getItem("joinedUser"));
   return (

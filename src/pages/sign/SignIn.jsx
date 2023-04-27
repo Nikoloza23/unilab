@@ -9,6 +9,8 @@ const SignIn = () => {
   const [enteredName, setEnteredName] = useState("");
   const [userProfile, setUserProfile] = useState("");
 
+  const navigate = useNavigate();
+
   const uploadImage = async (e) => {
     const file = e.target.files[0];
     const base64 = await convertBase64(file);
@@ -19,18 +21,14 @@ const SignIn = () => {
     return new Promise((resolve, reject) => {
       const fileReader = new FileReader();
       fileReader.readAsDataURL(file);
-
       fileReader.onload = () => {
         resolve(fileReader.result);
       };
-
       fileReader.onerror = (error) => {
         reject(error);
       };
     });
   };
-
-  const navigate = useNavigate();
 
   function handleJoin() {
     const enteredValues = {
@@ -39,10 +37,9 @@ const SignIn = () => {
     };
     if (!enteredName) return;
     localStorage.setItem("joinedUser", JSON.stringify(enteredValues));
-
     navigate("/todo");
   }
-  console.log("joinedUserName", enteredName);
+
   return (
     <div className="registrer_container">
       <div className="registrer_box">
