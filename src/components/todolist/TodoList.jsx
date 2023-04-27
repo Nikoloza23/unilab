@@ -4,6 +4,7 @@ import deleted from "../../assets/delete.svg";
 import "./todoList.scss";
 
 const TodoList = () => {
+  
   return (
     <div className="todo_list_container">
       <h1>Add Your Daily Tasks</h1>

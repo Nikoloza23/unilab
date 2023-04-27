@@ -3,7 +3,7 @@
 .navbar_container {
   @include flex(center, space-between);
   background: $cl-black;
-  
+
   height: 98px;
   h1 {
     color: $cl-white;

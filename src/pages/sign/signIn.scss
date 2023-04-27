@@ -10,17 +10,17 @@
   .registrer_box {
     @include flex(center, "");
     flex-direction: column;
-    width: 488px;
-    height: 488px;
+    width: 450px;
+    height: 500px;
     border-radius: 4px;
     background: $cl-white;
     h1 {
       font: $poppin;
-      margin-top: 20px;
+      margin-top: $regular_size;
     }
     label {
       font: $poppin3;
-      margin-top: 20px;
+      margin-top: $regular_size;
       margin-bottom: 15px;
     }
     .img_bubble {
@@ -28,7 +28,7 @@
       height: 80px;
       background: #e6ebff 0% 0% no-repeat padding-box;
       border-radius: 80px;
-      margin-bottom: 20px;
+      margin-bottom: $regular_size;
       &:hover {
         background: $cl-green;
       }
@@ -42,13 +42,13 @@
     input {
       width: 400px;
       height: 50px;
-      border: none;
+      border: $without;
       background: $un-c-e;
-      padding-left: 20px;
+      padding-left: $regular_size;
       margin-bottom: 30px;
     }
     input::placeholder {
-      font-weight: bold;
+      font-weight: $fw;
       opacity: 1;
       font-size: 1.2em;
     }
@@ -57,7 +57,7 @@
       height: 56px;
       font-size: 2em;
       background: $cl-green;
-      border: none;
+      border: $without;
       cursor: $curs;
       &:hover {
         background: $cl-black;

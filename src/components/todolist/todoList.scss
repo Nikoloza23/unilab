@@ -2,58 +2,60 @@
 
 .todo_list_container {
   @include flex(center, center);
-  margin-top: 20px;
-  flex-direction: column;
+  margin-top: $regular_size;
+  flex-direction: $cl;
   h1 {
-    margin-bottom: 20px;
-    font: normal normal 600 42px/63px sans-serif;
-    font-weight: bold;
+    margin-bottom: $regular_size;
+    font: $todopoppin;
+    font-weight: $fw;
   }
   input {
     width: 487px;
     height: 46px;
     background: $un-c-e;
-    border: none;
-    padding-left: 20px;
+    border: $without;
+    padding-left: $regular_size;
   }
   input::placeholder {
     font-size: 1.2em;
-    font-weight: bold;
+    font-weight: $fw;
   }
   button {
     position: $abs;
     height: 46px;
     width: 100px;
     left: 65%;
-    border: none;
+    border: $without;
     background: $cl-green;
-    font-weight: bold;
+    font-weight: $fw;
     font-size: 1.5em;
-    cursor: pointer;
+    cursor: $curs;
   }
   .tasks {
-    margin-top: 20px;
+    margin-top: $regular_size;
     margin-left: 35px;
     .added_tasks {
       border-radius: 4px;
-      padding-top: 20px;
-      padding-left: 20px;
+      padding-top: $regular_size;
+      padding-left: $regular_size;
       color: $cl-white;
       width: 510px;
-      height: 40px;
+      height: 30px;
       background: $cl-black;
       margin-bottom: 10px;
-      list-style: none;
+      list-style: $without;
+      font-weight: $fw;
+      font-family: sans-serif;
     }
   }
   .todo_template {
     width: 100px;
     display: flex;
     margin-left: 33%;
-    background: black;
-    position: absolute;
-    margin-top: 20px;
-    background: none;
+    background: $cl-black;
+    position: $abs;
+    margin-top: 15px;
+    background: $without;
     cursor: $curs;
     .delete_task {
       margin-left: 50px;
