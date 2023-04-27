@@ -1,0 +1,68 @@
+@use "../../sass/index.scss" as *;
+
+.registrer_container {
+  background: $cl-black;
+  width: 100vw;
+  background-size: cover;
+  height: 100vh;
+  position: $abs;
+  @include flex(center, center);
+  .registrer_box {
+    @include flex(center, "");
+    flex-direction: column;
+    width: 488px;
+    height: 488px;
+    border-radius: 4px;
+    background: $cl-white;
+    h1 {
+      font: $poppin;
+      margin-top: 20px;
+    }
+    label {
+      font: $poppin3;
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+    .img_bubble {
+      width: 110px;
+      height: 80px;
+      background: #e6ebff 0% 0% no-repeat padding-box;
+      border-radius: 80px;
+      margin-bottom: 20px;
+      &:hover {
+        background: $cl-green;
+      }
+      img {
+        width: 63px;
+        margin-top: 5px;
+        margin-left: 25px;
+        cursor: $curs;
+      }
+    }
+    input {
+      width: 400px;
+      height: 50px;
+      border: none;
+      background: $un-c-e;
+      padding-left: 20px;
+      margin-bottom: 30px;
+    }
+    input::placeholder {
+      font-weight: bold;
+      opacity: 1;
+      font-size: 1.2em;
+    }
+    button {
+      width: 238px;
+      height: 56px;
+      font-size: 2em;
+      background: $cl-green;
+      border: none;
+      cursor: $curs;
+      &:hover {
+        background: $cl-black;
+        color: $cl-white;
+      }
+    }
+  }
+}
