@@ -1,0 +1,38 @@
+@use "../../sass/index.scss" as *;
+
+.landing_container {
+  background: $cl-black;
+  width: 100vw;
+  background-size: cover;
+  height: 100vh;
+  position: $abs;
+  .wrapper {
+    margin-top: 75px;
+    @include flex(center, center);
+    flex-direction: column;
+    img {
+      width: 90px;
+      height: 165px;
+      margin-bottom: 50px;
+    }
+    h1 {
+      color: $cl-white;
+      font: $popin;
+      text-transform: $cap;
+      margin-bottom: 50px;
+    }
+    button {
+      text-transform: $cap;
+      width: 388px;
+      height: 98px;
+      background: $cl-green;
+      color: $cl-black;
+      font: $popin2;
+      cursor: $curs;
+      border-radius: 10px;
+      &:hover {
+        background: $cl-white;
+      }
+    }
+  }
+}
