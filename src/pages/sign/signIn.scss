@@ -11,7 +11,7 @@
     @include flex(center, "");
     flex-direction: column;
     width: 450px;
-    height: 500px;
+    height: 550px;
     border-radius: 4px;
     background: $cl-white;
     h1 {
@@ -21,6 +21,7 @@
     label {
       font: $poppin3;
       margin-top: $regular_size;
+      margin-bottom: 5px;
     }
     .img_bubble {
       img {
@@ -38,7 +39,6 @@
     input {
       width: 400px;
       height: 50px;
-      border: $without;
       background: $un-c-e;
       padding-left: $regular_size;
       margin-bottom: 30px;
@@ -54,6 +54,8 @@
       font-size: 2em;
       background: $cl-green;
       border: $without;
+      margin-top: 20px;
+      border-radius: 4px;
       cursor: $curs;
       &:hover {
         background: $cl-black;
@@ -61,6 +63,11 @@
       }
     }
   }
+}
+
+.error_messages {
+  color: red;
+  position: relative;
 }
 
 @media (max-width: 1000px) {

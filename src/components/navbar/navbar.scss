@@ -3,7 +3,6 @@
 .navbar_container {
   @include flex(center, space-between);
   background: $cl-black;
-
   height: 98px;
   h1 {
     color: $cl-white;
@@ -12,6 +11,7 @@
   }
   .navbar_right_side {
     display: flex;
+    align-items: center;
     div {
       color: $cl-white;
       font: $poppin3;
@@ -23,6 +23,7 @@
       background: $un-c-e;
       border-radius: 100px;
       height: 68px;
+      cursor: pointer;
     }
   }
 }
