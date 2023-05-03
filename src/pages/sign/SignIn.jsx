@@ -77,7 +77,7 @@ const SignIn = () => {
           )}
           <label>fill in you name</label>
           <input
-            value={enteredName}
+            defaultValue={enteredName}
             onChange={(e) => setEnteredName(e.target.value)}
             type="text"
             placeholder="your name"
