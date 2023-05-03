@@ -46,7 +46,7 @@ const SignIn = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (enteredName.length == 0 || userProfile.length == 0) {
+    if (enteredName.length === 0 || userProfile.length === 0) {
       setError(true);
     }
   };
