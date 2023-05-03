@@ -1,8 +1,9 @@
+import { useState } from "react";
+
 import done from "../../assets/done.svg";
 import deleted from "../../assets/delete.svg";
 
 import "./todoList.scss";
-import { useState } from "react";
 
 const TodoList = () => {
   const [task, setTask] = useState("");

@@ -38,9 +38,10 @@
     .added_tasks {
       border-radius: 4px;
       padding-top: 10px;
-      padding-left: $regular_size;
+      padding-left: 30px;
       color: $cl-white;
-      width: 520px;
+      width: 540px;
+      margin-left: 30px;
       height: 35px;
       background: $cl-black;
       margin-bottom: 10px;
@@ -65,7 +66,7 @@
   .todo_template {
     width: 100px;
     display: flex;
-    margin-left: 33%;
+    margin-left: 31%;
     background: $cl-black;
     position: $abs;
     margin-top: 10px;
